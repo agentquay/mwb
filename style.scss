@@ -5,8 +5,97 @@
 
 @import "compass/reset";
 
-body{
+html{
+	background: url(img/bkg.jpg);
 	
 
 
 }
+
+body{
+	background: #fff;
+	box-shadow:0 0 5px #a2a2a2 ;
+	@media screen and(min-width: 1080px) {
+
+		margin: 20px;
+		
+	}
+
+}
+
+.container {
+    margin: auto;
+    max-width: 1058px;
+    width: 90%;
+}
+
+.mwb_head {
+    background: url("img/header_bkg_bottom.png") repeat-x scroll 0 100% #fff;
+    clear: both;
+    overflow: auto;
+}
+
+.head_lt {
+    float: left;
+}
+
+.head_rt {
+    float: right;
+    padding: 30px 0 30px 30px;
+}
+
+
+.searchbox {
+    border: 3px dashed #f8c6dc;
+    padding: 17px;
+    width: 340px;
+ 
+
+	input {
+	    background: url("img/search_icon.png") no-repeat scroll 95% center #f1f1f2;
+	    border: medium none;
+	    box-sizing: border-box;
+	    font-size: 20px;
+	    height: 42px;
+	    padding: 10px;
+	    width: 100%;
+	}
+
+}
+
+
+.main_menu {
+	float: right;
+    margin: 60px 0 25px;
+
+	li {
+		color: #6d6e70;
+	    display: inline;
+	    margin: 0 5px;
+
+	    &:after{
+	    	content: " /";
+
+	    }
+
+	    &:last-child:after{
+	    		content:none;
+	    	}
+
+	    a{
+	    	color: #6d6e70;
+	    	text-decoration: none;
+
+	    	&:hover{
+	    		color:#ba3069;
+	    	}
+	    }
+	}
+}
+
+
+
+
+
+
+
