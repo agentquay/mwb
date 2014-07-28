@@ -222,6 +222,11 @@ footer h3 {
   font-size: 17px;
 }
 
+.mwb_foot {
+  background: url("img/header_bkg_bottom.png") repeat-x scroll 0 0 white;
+  padding: 50px 0 0;
+}
+
 .third {
   color: #808284;
   float: left;
