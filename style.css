@@ -58,8 +58,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   background: url(img/bkg.jpg);
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -74,7 +82,9 @@ body {
 
 .container {
   margin: auto;
-  max-width: 1058px;
+  max-width: 1080px;
+  overflow: auto;
+  padding: 0 10px;
   width: 90%;
 }
 
@@ -129,4 +139,100 @@ body {
 }
 .main_menu li a:hover {
   color: #ba3069;
+}
+
+.content {
+  float: left;
+  margin: 0 auto 25px;
+  width: 697px;
+}
+
+.c_head {
+  border-bottom: 4px solid #808284;
+  padding: 25px 0 0;
+}
+
+.cat_menu {
+  margin: 45px 0 10px;
+}
+.cat_menu li {
+  display: inline;
+}
+
+time {
+  display: block;
+  padding: 0 0 10px;
+}
+
+.post_contain {
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+  padding: 35px 0 20px;
+}
+
+.post_img {
+  display: block;
+  float: left;
+  width: 27.2597%;
+}
+
+.post_info {
+  float: left;
+  padding: 0 0 0 80px;
+  width: 72.7403%;
+}
+.post_info h2 {
+  font-size: 26px;
+  padding: 15px 0;
+}
+.post_info p {
+  color: #808284;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.post_tags {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.sidebar {
+  float: right;
+  margin: 0 0 25px;
+  width: 250px;
+}
+
+footer {
+  line-height: 1.5;
+}
+footer h3 {
+  color: #231f20;
+  font-family: serif;
+  font-size: 17px;
+}
+
+.third {
+  color: #808284;
+  float: left;
+  padding: 0 15px 20px 0px;
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 33.3333%;
+}
+
+.box_two div {
+  float: left;
+  width: 50%;
+}
+
+.social_icons {
+  margin: 20px auto;
+}
+.social_icons li {
+  display: inline;
+}
+
+.copyright {
+  font-size: 12px;
 }
