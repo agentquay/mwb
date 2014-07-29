@@ -148,6 +148,16 @@ body {
   color: #ba3069;
 }
 
+.trail a {
+  color: #808284;
+}
+.trail a:after {
+  content: " > ";
+}
+.trail a:last-child:after {
+  content: none;
+}
+
 .content {
   float: left;
   margin: 0 auto 25px;
@@ -176,6 +186,9 @@ time {
   border-bottom: 1px solid #ccc;
   overflow: auto;
   padding: 35px 0 20px;
+}
+.post_contain:last-child {
+  border-bottom: none;
 }
 
 .post_img {
@@ -207,10 +220,23 @@ time {
 
 .sidebar {
   color: #58585b;
+  font-family: sans-serif;
+  font-size: 15px;
   float: right;
   line-height: 1.25;
   margin: 0 0 25px;
   width: 250px;
+}
+.sidebar a {
+  color: #709fb1;
+}
+
+figcaption {
+  margin: 30px 0;
+}
+
+.links li {
+  float: left;
 }
 
 footer {
