@@ -161,13 +161,17 @@ time {
 .post_img {
     display: block;
     float: left;
-    width: 27.2597%;
+    width: 35.581062%;
+
+    img{
+    	width: 240px;
+    }
 }
 
 .post_info {
     float: left;
-    padding: 0 0 0 80px;
-    width: 72.7403%;
+    padding: 0 0 0 20px;
+    width: 64.418938%;
 
     h2 {
 	    font-size: 26px;
@@ -273,3 +277,28 @@ footer{
     font-size: 12px;
 }
 
+/* colors */
+
+.one{
+	a{
+		color: #009344;
+	}
+}
+
+.two{
+	a{
+		color: #00adef;	
+		}
+}
+
+.three{
+	a{
+		color: #be1e2d;		
+		}
+}
+
+.four{
+	a{
+		color: #709fb1;	
+	}
+}
