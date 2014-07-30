@@ -173,8 +173,9 @@ body {
   margin: 45px 0 10px;
 }
 .cat_menu li {
-  display: inline;
+  display: inline-block;
   margin: 0 20px 0 0;
+  width: 65px;
 }
 
 time {
@@ -198,6 +199,15 @@ time {
 }
 .post_img img {
   width: 240px;
+}
+
+.comm {
+  background: #709fb1;
+  bottom: 100px;
+  color: #fff;
+  left: 62%;
+  padding: 6px 10px;
+  position: relative;
 }
 
 .post_info {

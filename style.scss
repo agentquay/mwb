@@ -138,8 +138,9 @@ body{
     margin: 45px 0 10px;
 
     li {
-	    display: inline;
+	    display: inline-block;
 	    margin: 0 20px 0 0;
+	    width: 65px;
 	}
 }
 
@@ -166,6 +167,15 @@ time {
     img{
     	width: 240px;
     }
+}
+
+.comm {
+    background: #709fb1;
+    bottom: 100px;
+    color: #fff;
+    left: 62%;
+    padding: 6px 10px;
+    position: relative;
 }
 
 .post_info {
@@ -302,3 +312,6 @@ footer{
 		color: #709fb1;	
 	}
 }
+
+
+
