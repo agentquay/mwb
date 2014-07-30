@@ -64,6 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html {
   background: url(img/bkg.jpg);
+  line-height: normal;
 }
 
 a {
@@ -100,10 +101,29 @@ body {
 .head_lt {
   float: left;
 }
+@media screen and (max-width: 700px) {
+  .head_lt {
+    float: none;
+    width: 100%;
+  }
+}
 
 .head_rt {
   float: right;
-  padding: 30px 0 30px 30px;
+  padding: 30px 0 0px 30px;
+  width: 50%;
+}
+@media screen and (max-width: 930px) {
+  .head_rt {
+    width: 59%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .head_rt {
+    padding: 0;
+    float: none;
+    width: 100%;
+  }
 }
 
 .searchbox {
@@ -120,6 +140,12 @@ body {
   height: 42px;
   padding: 10px;
   width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .searchbox {
+    float: none;
+    width: 100%;
+  }
 }
 
 .main_menu {
@@ -147,6 +173,12 @@ body {
 .main_menu li a:hover {
   color: #ba3069;
 }
+@media screen and (max-width: 700px) {
+  .main_menu {
+    float: none;
+    text-align: initial;
+  }
+}
 
 .trail a {
   color: #808284;
@@ -161,7 +193,20 @@ body {
 .content {
   float: left;
   margin: 0 auto 25px;
-  width: 697px;
+  padding: 0 12.314815% 0 0;
+  width: 76.851852%;
+}
+@media screen and (min-width: 1040px) {
+  .content {
+    /* max-width: 697px; */
+  }
+}
+@media screen and (max-width: 1040px) {
+  .content {
+    padding: 0;
+    float: none;
+    width: 100%;
+  }
 }
 
 .c_head {
@@ -199,15 +244,38 @@ time {
 }
 .post_img img {
   width: 240px;
+  max-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .post_img img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 749px) {
+  .post_img {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .post_img {
+    float: none;
+    width: 100%;
+  }
 }
 
 .comm {
   background: #709fb1;
   bottom: 100px;
   color: #fff;
+  display: inline-block;
   left: 62%;
   padding: 6px 10px;
   position: relative;
+}
+@media screen and (max-width: 750px) {
+  .comm {
+    left: 0%;
+  }
 }
 
 .post_info {
@@ -225,6 +293,18 @@ time {
   font-size: 15px;
   line-height: 1.5;
 }
+@media screen and (max-width: 500px) {
+  .post_info {
+    padding: 0;
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 749px) {
+  .post_info {
+    width: 48%;
+  }
+}
 
 .post_tags {
   font-family: sans-serif;
@@ -238,13 +318,23 @@ time {
   float: right;
   line-height: 1.25;
   margin: 0 0 25px;
-  width: 250px;
+  max-width: 250px;
+  width: 23.1481%;
 }
 .sidebar a {
   color: #709fb1;
 }
+@media screen and (max-width: 1040px) {
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+}
 
-figcaption {
+.s_about img {
+  width: 100%;
+}
+.s_about figcaption {
   margin: 30px 0;
 }
 
@@ -280,10 +370,27 @@ footer h3 {
 .third a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 800px) {
+  .third {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .third {
+    width: 100%;
+  }
+}
 
 .box_two div {
   float: left;
   width: 50%;
+}
+@media screen and (max-width: 520px) {
+  .box_two div {
+    margin: 0 0 20px;
+    float: none;
+    width: 100%;
+  }
 }
 
 .social_icons {

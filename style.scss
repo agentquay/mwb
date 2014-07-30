@@ -5,12 +5,20 @@
 
 @import "compass/reset";
 
+@mixin mqfw{
+
+	float: none;
+	width: 100%;
+
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 html{
 	background: url(img/bkg.jpg);
+	line-height: normal;
 }
 
 a{
@@ -48,11 +56,32 @@ body{
 
 .head_lt {
     float: left;
+
+    @media screen and(max-width: 700px) {
+
+		@include mqfw;
+		
+	}
 }
 
 .head_rt {
     float: right;
-    padding: 30px 0 30px 30px;
+    padding: 30px 0 0px 30px;
+    width: 50%;
+
+    @media screen and(max-width: 930px) {
+
+		width: 59%;
+		
+	}
+
+	@media screen and(max-width: 700px) {
+
+		padding: 0;
+		@include mqfw;
+		
+	}
+
 }
 
 
@@ -70,6 +99,12 @@ body{
 	    height: 42px;
 	    padding: 10px;
 	    width: 100%;
+	}
+
+	@media screen and(max-width: 700px) {
+
+		@include mqfw;
+		
 	}
 
 }
@@ -105,6 +140,14 @@ body{
 	    	}
 	    }
 	}
+
+	@media screen and(max-width: 700px) {
+
+			float: none;
+		    text-align: initial;
+
+			
+		}
 }
 
 .trail{
@@ -126,7 +169,20 @@ body{
 .content {
     float: left;
     margin: 0 auto 25px;
-    width: 697px;
+    padding: 0 12.314815% 0 0;
+    width: 76.851852%;
+
+
+	@media screen and(min-width: 1040px) {
+		
+    	/* max-width: 697px; */
+	}
+
+    @media screen and(max-width: 1040px) {
+		
+		padding: 0;
+		@include mqfw;
+	}
 }
 
 .c_head {
@@ -166,16 +222,42 @@ time {
 
     img{
     	width: 240px;
+    	max-width: 100%;
+
+    	@media screen and(max-width: 500px) {
+
+			width: 100%;
+			
+		}
     }
+
+    @media screen and (min-width: 501px) and (max-width: 749px) {
+
+		width: 48%;
+		
+	}
+
+    @media screen and(max-width: 500px) {
+
+		@include mqfw;
+		
+	}
 }
 
 .comm {
     background: #709fb1;
     bottom: 100px;
     color: #fff;
+    display: inline-block;
     left: 62%;
     padding: 6px 10px;
     position: relative;
+
+    @media screen and(max-width: 750px) {
+
+			left: 0%;
+			
+		}
 }
 
 .post_info {
@@ -194,6 +276,19 @@ time {
 	    font-size: 15px;
 	    line-height: 1.5;
 	}
+
+	@media screen and(max-width: 500px) {
+		
+		padding: 0;
+		@include mqfw;
+		
+	}
+
+	@media screen and (min-width: 501px) and (max-width: 749px) {
+
+		width: 48%;
+		
+	}
 }
 
 .post_tags{
@@ -208,16 +303,31 @@ time {
     float: right;
     line-height: 1.25;
     margin: 0 0 25px;
-    width: 250px;
+    max-width: 250px;
+    width: 23.1481%;
 
     a{
     	color: #709fb1;
     }
+
+    @media screen and(max-width: 1040px) {
+		
+		@include mqfw;
+		
+	}
+}
+.s_about{
+	
+	img{
+		width: 100%;
+	}
+
+	figcaption{
+		margin: 30px 0;
+	}
+
 }
 
-figcaption{
-	margin: 30px 0;
-}
 .links{
 
 	li {
@@ -255,6 +365,18 @@ footer{
     		text-decoration: underline;
     	}
     }
+
+    @media screen and(max-width: 800px) {
+		
+		width: 50%;
+		
+	}
+
+	@media screen and(max-width: 520px) {
+		
+		width: 100%;
+		
+	}
 }
 
 .box_two{
@@ -262,6 +384,14 @@ footer{
 	div {
 	    float: left;
 	    width: 50%;
+
+	    @media screen and(max-width: 520px) {
+
+
+			margin: 0 0 20px;
+			@include mqfw;
+			
+		}
 	}
 } 
 
